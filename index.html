@@ -9,22 +9,32 @@
 </head>
 <body>
 <!--<button id="myBtn">Open</button>-->
+
+
+
+
+
 <div id="mypopup" class="popup">
     <div class="popup-content">
         <div class="popup-header">
             <h2>Вход</h2>
             <span class="close">&times;</span>
         </div>
+        <form role="form" onsubmit="signUp(event);">
         <div class="popup-body">
             <div class="search-modal">
                 <div class="div-search-input-modal">
-                    <input type="text" class="search-input-login" placeholder="Логин" required>
-                    <input type="password" class="search-input-login" placeholder="Пароль" required>
+                    <input type="text" name="login" id="login" class="search-input-login" placeholder="Логин" required>
+                    <input type="password" name="password" id="password" class="search-input-login" placeholder="Пароль" required>
                 </div>
             </div>
             <input type="checkbox" class="checkbox" name="remember">Запомнить
-            <button type="submit" class="modal-login-button">Войти</button>
+            <button type="submit" id="modal-login-button"  class="modal-login-button" >Войти</button>
+
         </div>
+
+        </form>
+
     </div>
 </div>
 
@@ -50,11 +60,21 @@
                 <button type="submit" class="search-button">Найти</button>
             </div>
         </div>
+        <div class="output" id="output">
+
+        </div>
         <div class="div-login-button">
             <button id="myBtn" class="login-button">Войти</button>
+
         </div>
+
     </div>
+
 </header>
+
+<div id="login-closing">
+
+</div>
 <!--Header ends-->
 
 <!--Main starts-->
@@ -300,6 +320,7 @@
 
 <script src="src/js/tabs.js"></script>
 <script src="src/js/modal.js"></script>
+<script src="src/js/registration.js"></script>
 
 </body>
 </html>
