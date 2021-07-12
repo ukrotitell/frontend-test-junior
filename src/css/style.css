@@ -1,9 +1,6 @@
 /*Header starts*/
 
-.body {
-    margin: 0;
-    padding: 0;
-}
+
 
 .header {
     max-width: 1180px;
@@ -453,4 +450,28 @@ p:not(:last-child) {
     line-height: 19px;
     width: 70px;
     margin-right: -100px;
+}
+
+/*Find films*/
+
+ul.elastic > li {
+    	/* Убираем маркеры списка */
+    padding-right: 16px;		/* Поля вокруг текста */
+
+}
+
+
+ul.elastic {
+    list-style: none;	/* Убираем маркеры списка */
+    display: flex;
+    padding-left: 0;
+
+}
+
+.elastic li.hide {
+    display: none;
+}
+
+.title .hide{
+    display: none;
 }
